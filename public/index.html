@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./script.js"></script>
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet" />
+
+<title>Allen</title>
+</head>
+<body class="bg-black">
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <div class="nav-bar  font-bold text-white"> 
+    <nav >
+      <label class="logo">Allen Shaji</label>  
+      <ul class="nav-links">
+          <li><a href="">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a  href="#resume">Resume</a></li>
+          <li><a  href="#container">Contact Me</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="flexbox-container"> 
+        <div class="flexbox-item flexbox-item-1 ">Code With Allen</div>
+    </div>
+    <div class="media">
+        <ul>
+            <li><a href="https://linkedin.com/in/allenshajiofficial"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/AllenShaji3"><i class=" fab fa-github fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <div class="navigation">
+        <i class=" fas fa-bars fa-3x"></i>
+    </div>
+    <div class="content">
+    <div class="about">
+        <h1 class="text-9xl">Hello, <br>I am Allen.</h1>
+        <h2 class="text-5xl py-10 ">A Web Developer & Programmer</h2>
+    </div>
+    <div class="projects" id="projects">
+        <div class="text-5xl heading animate-bounce">PROJECTS</div>
+        <div class="content text-gray-100">
+            <div class="item collge-finder">
+                <h1 class="text-3xl font-mono">College Finder API</h1> <p class="font-mono">College Finder is an API to find  specific course oriented colleges. I have created 
+                    a front end for the API to make it easier for an user to find what he needs. User needs to login first before using this feature.
+                </p>
+            
+                
+                    <div class="button" type="submit" id="button-6">
+                        <div id="spin"></div>
+                        <a href="https://collegefinderapi.herokuapp.com" target="_blank">Visit Website</a>
+                      </div>
+                 
+            </div>
+            <div class="item funmathgame">
+                <h1 class="text-3xl font-mono">Fun Math Game</h1> <p class="font-mono">Fun Math is a simple game developed using android studio and Kotlin.
+                    Game helps to learn mathematics in a fun way. Click the below link to view it on Google PlayStore.
+            
+                </p>
+            
+                
+                    <div class="button" type="submit" id="button-6">
+                        <div id="spin"></div>
+                        <a href="https://play.google.com/store/apps/details?id=com.gc200394891.funmathgame" target="_blank">Click here</a>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume" id="resume">
+        <div class="text-5xl headingr"> DOWNLOAD MY RESUME</div>
+
+        <a href="../src/downloads/resume.pdf" download="AllenShajiResume"><i class="fas fa-download fa-7x pt-8"></i></a>
+        <div>Click here</div> 
+    </div>
+    <div class="container" id="container">
+        <div class="text-5xl headingc ">CONTACT ME</div>
+        <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbzfLS_lBdgbdlOy0AIpzORtwlbC6S-2U8EXSakiVD-aYrPIe9pjYC4/exec">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea  id="message" name="message" cols="30" rows="10" required></textarea>
+            </div>
+            
+            <button type="submit" class="button sbtn" id="button-6"><div id="spin"></div>Submit</button>
+            
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="https://linkedin.com/in/allenshajiofficial"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/AllenShaji3"><i class=" fab fa-github fa-2x"></i></a></li>
+        </ul>
+    </div>
+</div>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+
+    </script>
+
+</body>
+</html>
