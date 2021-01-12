@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="../src/images/logo-fevicon.png"/>
     <script defer src="./script.js"></script>
 
     <!-- Font Awesome -->
@@ -23,11 +24,11 @@ rel="stylesheet" />
     <div class="loader_bg">
         <div class="loader"></div>
     </div>
-    <div class="nav-bar  font-bold text-white"> 
+    <div class="nav-bar  font-bold text-white" id="nav-bar"> 
     <nav >
-      <label class="logo">Allen Shaji</label>  
-      <ul class="nav-links">
-          <li><a href="">About</a></li>
+      <label class="logo"><img src="../src/images/logo.png"/></label>  
+      <ul class="nav-links" id="nav-links">
+          <li><a href="#">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a  href="#resume">Resume</a></li>
           <li><a  href="#container">Contact Me</a></li>
@@ -35,18 +36,21 @@ rel="stylesheet" />
     </nav>
     </div>
     <div class="flexbox-container"> 
-        <div class="flexbox-item flexbox-item-1 ">Code With Allen</div>
+        <div class="flexbox-item flexbox-item-1">“If you think math is hard, try web design.”
+            – Trish Parr</div>
     </div>
-    <div class="media">
+    <div class="media show" id="media">
         <ul>
             <li><a href="https://linkedin.com/in/allenshajiofficial"><i class="fab fa-linkedin fa-2x"></i></a></li>
             <li><a href="https://github.com/AllenShaji3"><i class=" fab fa-github fa-2x"></i></a></li>
         </ul>
     </div>
-    <div class="navigation">
-        <i class=" fas fa-bars fa-3x"></i>
+    <div class="navigation hide" id="navigation">
+        <button id="hamburger">
+        <i  class=" fas fa-bars fa-3x" id="navIcon"></i>
+    </button>
     </div>
-    <div class="content">
+    <div class="content" id="content">
     <div class="about">
         <h1 class="text-9xl">Hello, <br>I am Allen.</h1>
         <h2 class="text-5xl py-10 ">A Web Developer & Programmer</h2>
@@ -55,7 +59,20 @@ rel="stylesheet" />
         <div class="text-5xl heading animate-bounce">PROJECTS</div>
         <div class="content text-gray-100">
             <div class="item collge-finder">
-                <h1 class="text-3xl font-mono">College Finder API</h1> <p class="font-mono">College Finder is an API to find  specific course oriented colleges. I have created 
+                
+                <h1 class="text-3xl font-mono">College Finder API</h1> 
+                <ul class="lang">
+                    
+                    
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    
+                </ul>
+                <p class="font-mono">College Finder is a REST API to find  specific course oriented colleges. I have created 
                     a front end for the API to make it easier for an user to find what he needs. User needs to login first before using this feature.
                 </p>
             
@@ -67,7 +84,12 @@ rel="stylesheet" />
                  
             </div>
             <div class="item funmathgame">
-                <h1 class="text-3xl font-mono">Fun Math Game</h1> <p class="font-mono">Fun Math is a simple game developed using android studio and Kotlin.
+                <h1 class="text-3xl font-mono">Fun Math Game</h1>
+                <ul class="lang">
+                    <li>Android Studio</li>
+                    <li>Kotlin</li>
+                    <li>Firebase</li>
+                </ul> <p class="font-mono">Fun Math is a simple game developed using android studio and Kotlin.
                     Game helps to learn mathematics in a fun way. Click the below link to view it on Google PlayStore.
             
                 </p>
@@ -88,7 +110,7 @@ rel="stylesheet" />
     </div>
     <div class="container" id="container">
         <div class="text-5xl headingc ">CONTACT ME</div>
-        <form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbzfLS_lBdgbdlOy0AIpzORtwlbC6S-2U8EXSakiVD-aYrPIe9pjYC4/exec">
+        <form class="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbzfLS_lBdgbdlOy0AIpzORtwlbC6S-2U8EXSakiVD-aYrPIe9pjYC4/exec">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -110,8 +132,8 @@ rel="stylesheet" />
     </div>
     <div class="footer">
         <ul>
-            <li><a href="https://linkedin.com/in/allenshajiofficial"><i class="fab fa-linkedin fa-2x"></i></a></li>
-            <li><a href="https://github.com/AllenShaji3"><i class=" fab fa-github fa-2x"></i></a></li>
+            <li><a href="https://linkedin.com/in/allenshajiofficial"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="https://github.com/AllenShaji3"><i class=" fab fa-github fa-3x"></i></a></li>
         </ul>
     </div>
 </div>

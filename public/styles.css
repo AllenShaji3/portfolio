@@ -17,12 +17,12 @@ nav {
   width: 100%;
   top: 0%;
 }
-label.logo {
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+label.logo img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 nav ul {
   float: right;
@@ -53,10 +53,11 @@ nav ul li a:hover {
   float: right;
   margin-right: 10%;
   color: black;
-  font-size: 50px;
+  font-size: 18px;
   text-align: center;
   vertical-align: middle;
   line-height: 500px;
+  white-space: initial;
 }
 .media {
   position: fixed;
@@ -82,6 +83,14 @@ nav ul li a:hover {
   padding-top: 25px;
   width: 100%;
   text-align: center;
+}
+.lang li {
+  display: inline;
+  border-radius: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #4c4d53;
+  font-family: monospace;
 }
 .loader_bg {
   position: fixed;
@@ -253,6 +262,23 @@ textarea {
     background: black;
     height: 100%;
     width: 100%;
+    display: none;
+  }
+  .nav-bar.show {
+    display: block;
+  }
+  .content.hide {
+    display: none;
+  }
+
+  .content.show {
+    display: block;
+  }
+  .nav-bar.hide {
+    display: none;
+  }
+  #hamburger {
+    float: right;
   }
 
   .nav-bar ul {
@@ -264,9 +290,6 @@ textarea {
   .nav-bar li {
     display: block;
     margin-top: 20%;
-  }
-  .media {
-    display: none;
   }
 
   .flexbox-container {
@@ -291,6 +314,12 @@ textarea {
     margin: auto;
     display: block;
   }
+  .media {
+    display: none;
+  }
+  .footer {
+    display: inline;
+  }
   .footer ul li {
     display: inline;
   }
@@ -298,14 +327,27 @@ textarea {
     margin-left: 40%;
   }
 
-  .navigation {
+  .navigation.hide {
     display: block;
     width: 100%;
     height: 45px;
   }
+  .navigation.show {
+    position: absolute;
+    display: block;
+    width: 100%;
+  }
+
   .navigation i {
     float: right;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  label.logo img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-left: 40%;
+    margin-bottom: 15%;
   }
 }
